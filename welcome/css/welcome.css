@@ -1,0 +1,148 @@
+@font-face {
+    font-family: Fairuz-Normal;
+    src: url("../ArbFonts/ArbFONTS-Fairuz-Normal.otf");
+  }
+  
+  @font-face {
+    font-family: Fairuz-Bold;
+    src: url("../ArbFonts/ArbFONTS-Fairuz-Black.otf");
+  }
+  @font-face {
+    font-family: Fairuz-Black;
+    src: url("../ArbFonts/ArbFONTS-Fairuz-Black.otf");
+  }
+  *{
+    padding: 0;
+    margin: 0;
+}
+  body{
+    direction: rtl;
+    font-family: Fairuz-bold;
+}
+.footer{
+    position: relative;
+    padding-top: 10rem;
+    background-color: black;
+    text-align: center;
+  }
+  .footer-special-image{
+    display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+  }
+.footer-contantt{
+    position: absolute;
+bottom: 0;
+top: 0;
+right: 0;
+left: 0;
+}
+
+.footer .footer-special-image{
+    padding-top: 10rem;
+}
+.footer-contantt .head{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.footer-contantt .head i{
+    color: white;
+    width: 25px;
+    height:20px;
+}
+.footer-contantt .image-logo{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.footer-contantt .welcome-center h3{
+margin-top: 8rem;
+color: white;
+}
+.footer-contantt .welcome-center .button-goto{
+    margin-top: 130px;
+}
+.footer-contantt .welcome-center .button-goto a{
+text-decoration: none;
+color: black;
+}.footer-contantt .welcome-center .button-goto button{
+    width: 320px;
+    height: 60px;
+    background-color: black;
+    border-radius: 30px;
+    color: #DDBD7C;
+    font-family: Fairuz-Bold;
+    text-align: center;
+    border: 1px solid #AD8752;
+    margin: 20px;
+}
+.footer-contantt .welcome-center .button-goto button:hover{
+    background-image: linear-gradient(#AD8752,#DDBD7C);
+    color: black;
+}
+
+/* style pageload and site*/
+
+.card-img {
+    height: 718px;
+}
+.card-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+   padding: 60px;
+}
+.paragraph-overlay{
+    position: absolute;
+    top: 45%;
+    right: 13%;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+.paragraph-overlay h3{
+    color: #DDBD7C;
+}
+.paragraph-overlay p{
+    padding: 11px;
+    margin: 25px 75px;
+    background-color: #DDBD7C;
+    font-size: 23px;
+    border-radius: 5px;
+}
+/* end style pageload and site */
+@media (max-width:558px) {
+  .paragraph-overlay {
+    right: 0;
+  }
+}
+@media (max-width:768px) {
+  .paragraph-overlay {
+    right: 0;
+  }
+}
+
+@media (max-width: 767px){
+  .card{
+    height: 100vh;
+  }
+  .paragraph-overlay {
+    top: 40%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.567);
+}}
+@media (max-width:768px) {
+      
+    .footer-special-image img{
+        width: 100%;
+        height: 24rem;
+      }
+   
+    .footer-contantt .welcome-center h3 {
+        margin-top: 4rem;}
+    .footer-contantt .welcome-center .button-goto{
+        margin-top: 100px;
+    }
+}

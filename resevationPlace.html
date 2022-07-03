@@ -148,7 +148,7 @@
     <div class="container">
         <div class="section-place mt-5 ">
           <nav>
-            <div class="nav nav-tabs pt-5" id="nav-tab" role="tablist">
+            <div class="nav nav-tabs pt-5 justify-content-center" id="nav-tab" role="tablist">
               <button
                 class="nav-link active"
                 id="nav-home-tab"
@@ -161,7 +161,7 @@
               >
 حجز مكان              </button>
               <button
-                class="nav-link"
+                class="nav-link "
                 id="nav-profile-tab"
                 data-bs-toggle="tab"
                 data-bs-target="#nav-profile"
@@ -194,35 +194,67 @@
               <div class="gallery mt-5">
                 <h3 class="mb-4" style="text-align: center;">من فضلك امليءالبيانات الاتيه</h3>
                 <div class="row">
-                  <div class="col-lg-6 col-sm-12 form-full">
+                  <div class=" col-sm-12 form-full">
                 
-                      <label for="" class="mx-3 m1-2"> الاسم</label>
-                      <input type="email" class="px-4 m-sm-1"></input>    
-                        <label for="" class="mx-3 mt-2"> البريد الالكتروني</label>
-                        <input type="email" class="px-4"></input> 
-                        <label for="" class="mx-3 mt-2"> المحافظة</label>
-                        <input type="email" class="px-4"></input> 
-                        <label for="" class="mx-3 mt-2"> المركز</label>
-                        <input type="email" class="px-4"></input>  
-                        <label for="" class="mx-3 mt-2"> تحديد تاريخ الحجز</label>
-                        <input type="date" class="px-4"></input>   
-                              </div>
-                              <div class="col-lg-6 col-sm-12 form-full">
-                
-                                <label for="" class="mx-3 m1-2"> رقم الموبايل</label>
-                                <input type="email" class="px-4"></input>    
-                                  <label for="" class="mx-3 mt-2">  الغرض</label>
-                                  <input type="email" class="px-4"></input> 
-                                  <label for="" class="mx-3 mt-2"> المدينه</label>
-                                  <input type="email" class="px-4"></input>  
-                                  <label for="" class="mx-3 mt-2"> الشارع  </label>
-                                  <input type="date" class="px-4"></input>   
-                                  <label for="" class="mx-3 mt-2"> المده  </label>
-                                  <input type="time" class="px-4"></input>   
-                                        </div>
+    <label for="" class="mx-3 m1-2"> الاسم</label>
+    <input type="name" class="px-4 m-sm-1" ></input>    
+      <label for="" class="mx-3 mt-2"> البريد الالكتروني</label>
+      <input type="email" class="px-4"></input> 
+      <label for="" class="mx-3 mt-2"> المحافظة</label>
+      <input type="text" class="px-4"></input> 
+      <label for="" class="mx-3 mt-2"> المركز</label>
+      <input type="text" class="px-4"></input>  
+      <label for="" class="mx-3 mt-2"> تحديد تاريخ الحجز</label>
+      <input type="date" class="px-4"></input>   
+              <label for="" class="mx-3 m1-2"> رقم الموبايل</label>
+              <input type="email" class="px-4"></input>    
+                <label for="" class="mx-3 mt-2">  الغرض</label>
+                <input type="email" class="px-4"></input> 
+                <label for="" class="mx-3 mt-2"> المدينه</label>
+                <input type="email" class="px-4"></input>  
+                <label for="" class="mx-3 mt-2"> الشارع  </label>
+                <input type="street-address" class="px-4"></input>   
+                <label for="" class="mx-3 mt-2"> مدرسة الطالب  </label>
+                <input type="text" class="px-4"></input>   
+                <label for="" class="mx-3 mt-2"> المده  </label>
+                <input type="time" class="px-4"></input>   
+                <label for="" class="mx-3 mt-2"> الجنس / النوع  </label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>اختر</option>
+                  <option value="1">انثي</option>
+                  <option value="2">ذكر</option>
+                </select>
+                <label for="" class="mx-3 mt-2">شعبة الطالب</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>اختر</option>
+                  <option value="1">ادبي</option>
+                  <option value="2">علمي</option>
+                </select>
+                <label for="" class="mx-3 mt-2">
+                  هل تريد الإشتراك في خدمة توصيل المذكرات وسداد الإشتراك الشهري عن طريق مندوبنا؟
+                </label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>اختر</option>
+                  <option value="1">نعم</option>
+                  <option value="2">لا</option>
+                </select>
+                <label for="" class="mx-3 mt-2"> نوع الحجز </label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>اختر</option>
+                  <option value="1">اونلاين</option>
+                  <option value="2">في السنتر</option>
+                </select> 
+                <label for="" class="mx-3 mt-2"> اختر المجموعة  </label>
+                <select class="form-select" aria-label="Disabled select example" disabled>
+                  <option selected>اختر</option>
+                </select> 
+                <label for="" class="mx-3 mt-2"> تاكيد موعد الحجز</label>
+                <input type="date" class="px-4"></input>   
+ 
+                </div>
 
                 </div>
-                <div class="center-button">
+                <div class="center-button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <button >ارسال</button>
 
                 </div>
@@ -236,6 +268,19 @@
     </div>
     <!-- end section Reservation -->
 
+      <div class="modal text-center" tabindex="-1" id="exampleModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">              
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <img src="./images/Group 1051.svg" alt="">  
+                  <p class="pt-4" style="font-size: 30px;">تم الحجز بنجاح</p>
+              </div>
+            </div>
+          </div>
+        </div>
     <!-- first section subscribe -->
     <div class="subscribe">
       <div class="container">
